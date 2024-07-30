@@ -36,6 +36,15 @@ public class Employee {
     public String getPhonenumber() {
         return phonenumber;
     }
+
+    @Override
+    public String toString() {
+        return ("Имя сотрудника: " + getName() + "\n" +
+                "Табельный номер сотрудника: " + getTabNum()+"\n" +
+                "Номер телефона сотрудника: " + getPhonenumber()+"\n" +
+                "Стаж работы сотрудника: " + getWorkExperience()+"\n"+
+                "=======================================\n");
+    }
 }
 
 
